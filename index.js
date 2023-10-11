@@ -46,6 +46,13 @@ window.onload = () => {
       btnRemoveTask.onclick = function (e) {
         const clickedElement = e.target;
         clickedElement.closest("li").remove();
+
+        //controllo se il div abbia ancora dei figli dopo la rimozione di uno di loro
+        //e nel caso siano 0 i figli rimuovo anche il contenitore che rimarrebbe se no vuoto
+        if (list.childElementCount === 0) {
+          //console.log("Vero");
+          listDiv.remove();
+        }
       };
     } else {
       alert("Non è stata messa nessuna task");
