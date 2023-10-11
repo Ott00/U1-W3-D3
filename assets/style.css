@@ -88,7 +88,6 @@ main .input-block .input{
 
 .output-block ul li i{
     cursor: pointer;
-    text-align: right;
 }
 
 .output-block ul li i:hover{
