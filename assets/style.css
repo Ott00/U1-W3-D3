@@ -5,6 +5,7 @@
 }
 
 body{
+    background-color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,13 +15,25 @@ body{
 }
 
 main .input-block{
-    width: max-content;
+    width: 400px;
     margin-inline: auto;
     margin-top: 5rem;
     padding: 2rem;
     border-radius: 10px;
+    border: 2px solid white;
     background-color: #5097a8;
     color: white;
+}
+
+main .input-block h1{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+main .input-block .input{
+    width: max-content;
+    margin-inline: auto;
 }
 
 #addTask{
@@ -29,6 +42,11 @@ main .input-block{
     border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#addTask:hover{
+    border: 2px solid #FA824C;
 }
 
 #task{
@@ -37,6 +55,10 @@ main .input-block{
     border-radius: 5px;
     background-color: #437e8d;
     color: white
+}
+
+#task:hover{
+    border: 2px solid #FA824C;
 }
 
 #task::placeholder{
@@ -61,8 +83,14 @@ main .input-block{
 
 .output-block ul li{
     margin-bottom: .8rem;
+    cursor: pointer;
 }
 
 .output-block ul li i{
+    cursor: pointer;
     text-align: right;
+}
+
+.output-block ul li i:hover{
+    color: #FA824C;
 }

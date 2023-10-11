@@ -40,7 +40,7 @@ window.onload = () => {
       //segnato come fatto con l'aggiunta di una classe css
       listElement.onclick = function (e) {
         const clickedElement = e.target;
-        clickedElement.classList.add("task-done");
+        clickedElement.classList.toggle("task-done");
       };
 
       btnRemoveTask.onclick = function (e) {
